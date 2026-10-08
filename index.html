@@ -10,17 +10,17 @@
 <body><main class="page">
 <header><span class="tag">ระบบคำนวณค่าสมัครประกวดผลงาน</span><h1>คำนวณค่าธรรมเนียมการสมัคร<br>ผลงานเข้าประกวดรางวัลนาฏราช ครั้งที่ 18</h1><p>กรอกจำนวนผลงานในช่องสีเทา เพื่อคำนวณค่าธรรมเนียมและยอดรวม VAT 7%</p></header>
 <section class="card" aria-label="ตารางคำนวณค่าสมัคร"><div class="scroll"><table><thead><tr><th scope="col">ประเภท</th><th scope="col">ค่าธรรมเนียม<br>สมัคร / ผลงาน (บาท)</th><th scope="col">จำนวนผลงาน<br>ที่สมัคร</th><th scope="col">ค่าธรรมเนียม<br>(บาท)</th></tr></thead><tbody id="rows"></tbody></table></div>
-<div class="summary"><div class="hint">สำหรับรายการที่ระบุ “สาขาละ” ให้กรอกจำนวนผลงานรวมทุกสาขาที่สมัคร เช่น ผลงานเดียวส่ง 3 สาขา ให้กรอก 3<div id="error" role="alert"></div></div><dl class="totals" aria-live="polite" aria-atomic="true"><div><dt>จำนวนผลงานทั้งหมด (รวมฟรี)</dt><dd><span id="count">0</span> รายการ</dd></div><div><dt>รวมค่าธรรมเนียม</dt><dd><span id="subtotal">0.00</span> บาท</dd></div><div><dt>สิทธิฟรี <span id="free-count">0</span> ผลงาน</dt><dd>−<span id="free-value">0.00</span> บาท</dd></div><div><dt>ค่าธรรมเนียมหลังใช้สิทธิ</dt><dd><span id="net">0.00</span> บาท</dd></div><div><dt>VAT 7%</dt><dd><span id="vat">0.00</span> บาท</dd></div><div class="grand"><dt>ยอดชำระทั้งหมด</dt><dd><span id="total">0.00</span> <span style="font-size:14px">บาท</span></dd></div></dl></div></section>
-<section class="card benefit" style="margin-top:22px;padding:24px"><h2 style="margin:0 0 12px;font-size:22px">สิทธิประโยชน์เพิ่มเติม</h2><p>สมาชิกส่งผลงานแบบชำระเงิน 4 ผลงาน รับสิทธิส่งฟรีเพิ่ม 1 ผลงาน โดยรวมผลงานข้ามหมวดได้ เช่น Short Form และ Long Form ระบบยกเว้นค่าสมัคร 1 ผลงานที่มีราคาต่ำที่สุดในรายการที่ส่ง</p><p style="margin-top:12px;font-weight:bold">กรอกจำนวนผลงานทั้งหมดที่ต้องการส่ง รวมผลงานฟรี ในตารางด้านบน</p><p style="font-size:14px;margin-top:8px">ตัวอย่าง: Short Form 2 ผลงาน + Long Form 2 ผลงาน + ข่าว 1 ผลงาน รวม 5 ผลงาน → ฟรีรายการข่าว 1 ผลงาน มูลค่า 5,000 บาท</p><small>คำนวณสิทธิฟรี 1 ผลงานเมื่อส่งตั้งแต่ 5 ผลงานขึ้นไป</small></section><div class="actions"><button id="reset" type="button">ล้างข้อมูล</button><button id="print" class="primary" type="button">พิมพ์ / บันทึก PDF</button></div><footer>คำนวณตามอัตราที่ระบุในตาราง • หน้านี้เป็นเครื่องคำนวณ ไม่ใช่แบบฟอร์มส่งสมัคร</footer>
+<div class="summary"><div class="hint">กรอกจำนวนผลงานทั้งหมดที่ต้องการส่ง รวมผลงานฟรี ระบบจะคำนวณค่าธรรมเนียมให้อัตโนมัติ<div id="error" role="alert"></div></div><dl class="totals" aria-live="polite" aria-atomic="true"><div><dt>จำนวนผลงานทั้งหมด (รวมฟรี)</dt><dd><span id="count">0</span> รายการ</dd></div><div><dt>รวมค่าธรรมเนียม</dt><dd><span id="subtotal">0.00</span> บาท</dd></div><div><dt>สิทธิฟรี <span id="free-count">0</span> ผลงาน</dt><dd>−<span id="free-value">0.00</span> บาท</dd></div><div><dt>ค่าธรรมเนียมหลังใช้สิทธิ</dt><dd><span id="net">0.00</span> บาท</dd></div><div><dt>VAT 7%</dt><dd><span id="vat">0.00</span> บาท</dd></div><div class="grand"><dt>ยอดชำระทั้งหมด</dt><dd><span id="total">0.00</span> <span style="font-size:14px">บาท</span></dd></div></dl></div></section>
+<section class="card benefit" style="margin-top:22px;padding:24px"><h2 style="margin:0 0 12px;font-size:22px">สิทธิประโยชน์เพิ่มเติม</h2><p>ทุก 5 ผลงาน จ่าย 4 ผลงาน และฟรี 1 ผลงานที่ราคาถูกที่สุด โดยรวมผลงานข้ามหมวดได้ เช่น Short Form และ Long Form หากส่ง 10 ผลงาน จะจ่าย 8 ผลงาน และฟรี 2 ผลงานที่ราคาถูกที่สุด</p><p style="margin-top:12px;font-weight:bold">กรอกจำนวนผลงานทั้งหมดที่ต้องการส่ง รวมผลงานฟรี ในตารางด้านบน</p><p style="font-size:14px;margin-top:8px">ตัวอย่าง: Short Form 2 ผลงาน + Long Form 2 ผลงาน + ข่าว 1 ผลงาน รวม 5 ผลงาน → ฟรีรายการข่าว 1 ผลงาน มูลค่า 5,000 บาท</p><small>จำนวนผลงานฟรี = จำนวนผลงานทั้งหมดหาร 5 แล้วปัดลง โดยหักค่าสมัครจากผลงานราคาถูกที่สุดตามจำนวนสิทธิ</small></section><div class="actions"><button id="reset" type="button">ล้างข้อมูล</button><button id="print" class="primary" type="button">พิมพ์ / บันทึก PDF</button></div><footer>คำนวณตามอัตราที่ระบุในตาราง • หน้านี้เป็นเครื่องคำนวณ ไม่ใช่แบบฟอร์มส่งสมัคร</footer><p class="final-note" style="margin-top:14px;text-align:center;font-size:18px;line-height:1.7;color:#60707b">หมายเหตุ: ระบบนี้เป็นเพียงการคำนวณเบื้องต้น กรุณาสอบถามกับเจ้าหน้าที่สมาพันธ์ฯ เพื่อยืนยันยอดสรุปอีกครั้ง</p>
 </main>
 <script>
 const categories=[
 {name:'รายการข่าว',note:'',rate:5000},
 {name:'รายการโทรทัศน์',note:'ยกเว้น สารคดียอดเยี่ยมและรายการสำหรับเยาวชนยอดเยี่ยม',rate:8000},
 {name:'รายการโทรทัศน์',note:'เฉพาะ สารคดียอดเยี่ยมและรายการสำหรับเยาวชนยอดเยี่ยม',rate:5000},
-{name:'ละครและซีรีส์ Short Form ไม่เกิน 12 ตอน',note:'สาขาละ',rate:10000},
-{name:'ละครและซีรีส์ Long Form 13 ตอนขึ้นไป',note:'สาขาละ',rate:10000},
-{name:'องค์ประกอบละคร',note:'สาขาละ',rate:5000}
+{name:'ละครและซีรีส์ Short Form ไม่เกิน 12 ตอน',note:'',rate:10000},
+{name:'ละครและซีรีส์ Long Form 13 ตอนขึ้นไป',note:'',rate:10000},
+{name:'องค์ประกอบละคร',note:'',rate:5000}
 ];
 const money=n=>n.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});
 const integer=n=>n.toLocaleString('th-TH');
@@ -29,7 +29,10 @@ const inputs=[...document.querySelectorAll('.qty')];
 function calculate(){
  let count=0,subtotal=0,min=Infinity,valid=true;
  inputs.forEach((input,i)=>{const n=input.value===''?0:Number(input.value);const ok=!input.validity.badInput&&Number.isSafeInteger(n)&&n>=0&&n<=999999;input.setCustomValidity(ok?'':'กรุณากรอกจำนวนเต็มตั้งแต่ 0 ถึง 999,999');if(!ok)valid=false;const quantity=ok?n:0;count+=quantity;subtotal+=quantity*categories[i].rate;if(quantity>0)min=Math.min(min,categories[i].rate);document.getElementById(`amount-${i}`).textContent=ok?money(quantity*categories[i].rate):'—';});
- const free=valid&&count>=5?1:0,discount=free?min:0,net=subtotal-discount,vat=Math.round(net*7)/100;
+ const free=valid?Math.floor(count/5):0;
+ let remaining=free,discount=0;
+ categories.map((category,i)=>({rate:category.rate,quantity:Number(inputs[i].value)||0})).sort((a,b)=>a.rate-b.rate).forEach(item=>{const used=Math.min(remaining,Math.max(0,item.quantity));discount+=used*item.rate;remaining-=used;});
+ const net=subtotal-discount,vat=Math.round(net*7)/100;
  document.getElementById('error').textContent=valid?'':'กรุณากรอกจำนวนผลงานเป็นจำนวนเต็มตั้งแต่ 0 ถึง 999,999';
  for(const [id,value] of Object.entries({count:integer(count),subtotal:money(subtotal),'free-count':String(free),'free-value':money(discount),net:money(net),vat:money(vat),total:money(net+vat)}))document.getElementById(id).textContent=valid?value:'—';
  return valid;
